@@ -2,7 +2,7 @@
 
 A comprehensive C++ simulation framework for studying and analyzing memory management techniques, including dynamic memory allocators and multi-level cache systems with various replacement policies.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -12,15 +12,16 @@ A comprehensive C++ simulation framework for studying and analyzing memory manag
 - [Usage](#usage)
 - [Testing](#testing)
 - [Architecture](#architecture)
-- [Contributing](#contributing)
+- [Performance Metrics](#performance-metrics)
 
-## 🎯 Overview
+## Overview
 
 This project provides an interactive command-line simulator for exploring memory management concepts. It implements multiple memory allocation strategies and cache simulation with configurable policies, making it an excellent educational tool for understanding how operating systems and computer architectures manage memory.
 
-## ✨ Features
+## Features
 
 ### Memory Allocators
+
 - **List Allocator** with three fit strategies:
   - First Fit
   - Best Fit
@@ -31,6 +32,7 @@ This project provides an interactive command-line simulator for exploring memory
 - Allocation statistics tracking
 
 ### Cache Simulator
+
 - **Multi-level cache hierarchy** (L1, L2, L3)
 - **Multiple replacement policies**:
   - FIFO (First In, First Out)
@@ -42,12 +44,13 @@ This project provides an interactive command-line simulator for exploring memory
 - File-based logging support
 
 ### Interactive CLI
+
 - Command-line interface for real-time interaction
 - Memory and cache state inspection
 - Statistics and performance metrics
 - Configurable allocator and cache policies
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Language**: C++17
 - **Compiler**: GCC (G++)
@@ -55,7 +58,7 @@ This project provides an interactive command-line simulator for exploring memory
 - **Standard Library**: STL containers (`std::list`, `std::unordered_map`)
 - **Platform**: Cross-platform (Windows/Linux/macOS)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Memory-2/
@@ -88,9 +91,10 @@ Memory-2/
 └── README.md                   # This file
 ```
 
-## 🔨 Building the Project
+## Building the Project
 
 ### Prerequisites
+
 - GCC compiler with C++17 support
 - Make utility
 
@@ -118,7 +122,7 @@ make clean
 
 The main executable will be generated as `memsim`.
 
-## 🚀 Usage
+## Usage
 
 ### Starting the Simulator
 
@@ -213,7 +217,7 @@ Cache policy set to lru
 > exit
 ```
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive test suites:
 
@@ -222,6 +226,7 @@ The project includes comprehensive test suites:
 - **Cache Tests**: Validate cache behavior and policies
 
 Run tests using the Makefile targets:
+
 ```bash
 make test          # Allocator tests
 make cache_test    # Cache tests
@@ -229,42 +234,38 @@ make random        # Random allocator tests
 make cache_random  # Random cache tests
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Allocator Design
+
 - **Interface-based**: Base `Allocator` class with virtual methods
 - **Strategy Pattern**: Different fit strategies for list allocator
 - **Block Management**: Linked list of memory blocks with coalescing
 - **Statistics**: Track fragmentation, allocation success rates
 
 ### Cache Design
+
 - **Hierarchical**: Three-level cache (L1, L2, L3)
 - **Policy Pattern**: Pluggable replacement policies
 - **Performance Tracking**: Hit/miss rates, access times, cycle counting
 - **Logging**: Optional detailed access logging
 
-## 📊 Key Metrics
+## Performance Metrics
 
 ### Allocator Metrics
+
 - Total memory usage
 - External fragmentation percentage
 - Allocation success rate
 - Number of allocated blocks
 
 ### Cache Metrics
+
 - Overall hit rate
 - Per-level hit rates (L1, L2, L3)
 - Average access time
 - Memory access count
 - Total cycles
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-
-This project is provided for educational purposes.
 
 ---
 
