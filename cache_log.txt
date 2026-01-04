@@ -43,8 +43,46 @@ ACCESS 64 (block 4):
   Loaded into L2
   Loaded into L1
   Access time: 126 cycles
+ACCESS 80 (block 5):
+  L1 MISS
+  L2 MISS
+  L3 MISS
+  MAIN MEMORY ACCESS
+  Loaded into L3
+  Loaded into L2
+  Loaded into L1
+  Access time: 126 cycles
+ACCESS 96 (block 6):
+  L1 MISS
+  L2 MISS
+  L3 MISS
+  MAIN MEMORY ACCESS
+  Loaded into L3
+  Loaded into L2
+  Loaded into L1
+  Access time: 126 cycles
+ACCESS 112 (block 7):
+  L1 MISS
+  L2 MISS
+  L3 MISS
+  MAIN MEMORY ACCESS
+  Loaded into L3
+  Loaded into L2
+  Loaded into L1
+  Access time: 126 cycles
+ACCESS 128 (block 8):
+  L1 MISS
+  L2 MISS
+  L3 MISS
+  MAIN MEMORY ACCESS
+  Loaded into L3
+  Loaded into L2
+  Loaded into L1
+  Access time: 126 cycles
 ACCESS 0 (block 0):
   L1 MISS
-  L2 HIT
+  L2 MISS
+  L3 HIT
+  Loaded into L2
   Loaded into L1
-  Access time: 6 cycles
+  Access time: 26 cycles
