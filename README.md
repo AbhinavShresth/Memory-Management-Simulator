@@ -181,42 +181,6 @@ enable filelog
 disable filelog
 ```
 
-### Example Session
-
-```bash
-> init memory 1024
-Initialized memory of size 1024
-
-> set allocator best
-Allocator set to best
-
-> malloc 64
-Allocated block id=0
-
-> malloc 128
-Allocated block id=1
-
-> dump memory
-[Memory state visualization]
-
-> stats memory
-[Allocation statistics]
-
-> init cache
-Cache initialized
-
-> set policy lru
-Cache policy set to lru
-
-> access 0x1000
-[Cache access result]
-
-> stats cache
-[Cache performance metrics]
-
-> exit
-```
-
 ## Testing
 
 The project includes comprehensive test suites:
@@ -267,6 +231,6 @@ make cache_random  # Random cache tests
 - Memory access count
 - Total cycles
 
----
+## Documentation
 
-**Note**: This simulator is designed for educational and research purposes to understand memory management concepts. For production use, consider using standard library allocators or well-tested memory management libraries.
+For detailed implementation details, design decisions, and analysis, refer to `Report.pdf` included in this repository.
